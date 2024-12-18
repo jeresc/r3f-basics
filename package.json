@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.120.4",
     "@react-three/fiber": "^8.17.10",
     "@types/three": "^0.171.0",
+    "leva": "^0.9.35",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -29,6 +31,12 @@
     "globals": "^15.12.0",
     "prettier": "3.4.2",
     "vite": "^6.0.1"
+  },
+  "//": "Temporary fix for leva control color selection. See: https://github.com/pmndrs/leva/issues/508#issuecomment-2228569482",
+  "pnpm": {
+    "overrides": {
+      "leva>@radix-ui/react-portal": "1.0.2"
+    }
   },
   "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c"
 }
